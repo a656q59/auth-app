@@ -13,7 +13,7 @@ const Home = () => {
     const handleLogout = () => {               
         signOut(auth).then(() => {
         // Sign-out successful.
-            navigate("/login");
+            navigate("/");
             console.log("Signed out successfully")
         }).catch((error) => {
             console.log(error)
@@ -21,7 +21,7 @@ const Home = () => {
     }
 
     if(!user){
-        return <Navigate replace to="/login"/>
+        return <Navigate replace to="/"/>
     }
    
     return(

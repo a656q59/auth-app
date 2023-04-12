@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 function Welcome(props) {
     return (
         <div>
-            <Link to="/signup">Sign Up</Link>
+           <div> <Link to="/signup">Sign Up</Link></div>
             <Link to="/login">Login</Link>
         </div>
     );

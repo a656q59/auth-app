@@ -6,6 +6,7 @@ import { BrowserRouter as Router} from 'react-router-dom';
 import {Routes, Route} from 'react-router-dom';
 
 import { AuthProvider } from "./AuthProvider";
+import Welcome from './page/Welcome';
 
 
 function App() {
@@ -15,7 +16,7 @@ function App() {
       <section>  
       <AuthProvider>                            
           <Routes>    
-             <Route path="/" element={<Home/>}/>
+             <Route path="/" element={<Welcome/>}/>
              <Route path="/signup" element={<Signup/>}/>
              <Route path="/login" element={<Login/>}/>
              <Route path="/home" element={<Home/>}/>
